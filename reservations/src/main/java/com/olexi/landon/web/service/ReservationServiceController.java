@@ -1,7 +1,7 @@
-package com.frankmoley.landon.web.service;
+package com.olexi.landon.web.service;
 
-import com.frankmoley.landon.business.domain.RoomReservation;
-import com.frankmoley.landon.business.service.ReservationService;
+import com.olexi.landon.business.domain.RoomReservation;
+import com.olexi.landon.business.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * Created by oblavat on 4/8/17.
+ */
 @RestController
 @RequestMapping(value="/api")
 public class ReservationServiceController {

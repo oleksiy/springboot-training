@@ -7,6 +7,7 @@ import com.olexi.landon.data.entity.Room;
 import com.olexi.landon.data.repository.GuestRepository;
 import com.olexi.landon.data.repository.ReservationRepository;
 import com.olexi.landon.data.repository.RoomRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -20,6 +21,7 @@ public class ReservationService {
     private GuestRepository guestRepository;
     private ReservationRepository reservationRepository;
 
+    @Autowired
     public ReservationService(RoomRepository roomRepository, GuestRepository guestRepository, ReservationRepository reservationRepository) {
         this.roomRepository = roomRepository;
         this.guestRepository = guestRepository;

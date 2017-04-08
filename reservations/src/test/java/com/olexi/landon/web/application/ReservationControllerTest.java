@@ -16,18 +16,18 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.mockito.BDDMockito.given;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 /**
  * Created by oblavat on 4/8/17.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebMvcTest(ReservationController.class)
-public class ReservationController {
+public class ReservationControllerTest {
 
     @MockBean
     private ReservationService reservationService;
